@@ -11,8 +11,6 @@ import Register from "./features/authRoutes/Register.jsx"; // Non-lazy import
 import Public from "./features/authRoutes/Public.jsx"; // Non-lazy import
 import { AppContext } from "./features/utils/AppContext.jsx";
 
-const Welcome = lazy(() => import("./features/authRoutes/Welcome.jsx"));
-
 const App = () => {
   const context = useContext(AppContext); // Access context
   if (!context) return <Loader />;
