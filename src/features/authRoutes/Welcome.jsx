@@ -1,7 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { Outlet, Route, Routes, useNavigate } from "react-router-dom";
 import Hero from "../../components/Hero.jsx";
-import OnePerson from "../profileRoutes/OnePerson.jsx";
 import Setting from "../SettingRoutes/Setting.jsx";
 import { AppContext } from "../../features/utils/AppContext.jsx";
 import WelcomeSkeleton from "../../components/skeletons/WelcomeSkeleton.jsx";
@@ -9,6 +8,7 @@ import WelcomeSkeleton from "../../components/skeletons/WelcomeSkeleton.jsx";
 export const context = createContext();
 
 const Welcome = () => {
+  // import OnePerson from "../profileRoutes/OnePerson.jsx";
   const navigate = useNavigate();
   const [people, setPeople] = useState();
   const [posts, setPosts] = useState();
