@@ -30,7 +30,7 @@ const Welcome = () => {
       {appContext ? (
         <Routes>
           <Route index element={<Hero />} />
-          <Route path="person" element={<OnePerson />} />
+          {/* <Route path="person" element={<OnePerson />} /> */}
           <Route path="setting" element={<Setting />} />
         </Routes>
       ) : (
