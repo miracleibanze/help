@@ -114,7 +114,7 @@ const Signup = () => {
         {registerPage === 1 && (
           <>
             <label className="body-2 font-semibold">
-              <span>Select your title in the company</span>
+              <span>Password :</span>
               <input
                 type={viewPassword ? "text" : "password"}
                 name="password"
